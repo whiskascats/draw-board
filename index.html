@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js地下城-7f</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid" style="padding: 0;">
+            <div class="nav row justify-content-center align-items-center">
+                <a class="col-2 text-center save">
+                    <div class="d-inline nav-item">
+                        <i class="fas fa-2x fa-save mr-2"></i>
+                        SAVE
+                    </div>
+                </a>
+                <a class="col-2 text-center clear">
+                    <div class="d-inline nav-item">
+                        <i class="fas fa-2x fa-trash"></i>
+                        CLEAR ALL
+                    </div>
+                </a>
+                <a class="col-2 text-center undo ">
+                    <div class="d-inline nav-item disable">
+                        <i class="fas fa-2x fa-undo mr-2"></i>
+                        UNDO
+                    </div>
+                </a>
+                <a class="col-2 text-center redo ">
+                    <div class="d-inline nav-item disable">
+                        <i class="fas fa-2x fa-redo mr-2"></i>
+                        REDO
+                    </div>
+                </a>
+            </div>
+        </div>
+        <canvas id="draw-board"></canvas>
+        <div class="palette row align-items-center justify-content-center">
+            <i class="fas fa-2x fa-pen mr-3 d-block d-none peneraser"></i>
+            <i class="fas fa-2x fa-eraser mr-3 d-none peneraser"></i>
+            <div class="size mr-5">
+                SIZE: 
+                <input class="text-center input-size" type="text" value="5">
+                px
+            </div>
+            <div class="color-sel row align-items-center">
+                
+            </div>
+            <a href="javascript:;" class="ml-4 color mx-1 d-flex align-items-center justify-content-center add">
+                <label for="color-pick" class="m-0">
+                    <i class="fas fa-plus"></i>
+                </label>
+                <input type="color" id="color-pick" class="d-none">
+            </a>
+           
+        </div>
+        <div class="footer">            
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+    </script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
